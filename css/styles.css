@@ -11823,7 +11823,7 @@ h1 {
 
 @keyframes text_reveal_box {
   50% {
-    width: 35%;
+    width: 16rem;
     left: 0;
   }
   100% {
@@ -11834,5 +11834,27 @@ h1 {
 @keyframes text_reveal {
   100% {
     color: crimson;
+  }
+}
+
+.typing {
+  width: 19.5rem;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2rem;
+  color: crimson;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
